@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Un Año</title>
+  <link rel="shortcut icon" href="img/icon.jpg">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/Mystyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<header>
+  <nav id="navbar-ex" class="navbar navbar-dark bg-custom px-3 mb-3 fixed-top ">
+    <a class="navbar-brand" href="#">
+      <img src="img/icon.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+      Inicio
+    </a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading1">Momentos hermosos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2">Gracias!</a>
+      </li>
+
+    </ul>
+  </nav>
+</header>
+
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+  <div class="prueba">
+    <div class="container-title">
+      <h1 class="color-font">Feliz un año Natita 💕 </h1>
+    </div>
+    <div class="container-title">
+      <a class="btn btn-primary" href="./page/tiempo.html" role="button">TOCA PARA MIRAR</a>
+    </div>
+  </div>
+  
+
+  <section>
+    <div class=" container-second-Mu" id="scrollspyHeading1">
+      <h1 class="color-font" > momentos con mi POLLO 💙</h1>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="Cards/f0.jpeg" class="card-img-top" alt="example">
+          <div class="card-body">
+           
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="Cards/f1.jpeg" class="card-img-top" alt="example">
+          <div class="card-body">
+            
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="Cards/f2.jpeg" class="card-img-top" alt="example">
+          <div class="card-body">
+           
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="Cards/f3.jpeg" class="card-img-top" alt="example">
+          <div class="card-body">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="Cards/f4.jpeg" class="card-img-top" alt="example">
+          <div class="card-body">
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="Cards/f5.jpeg" class="card-img-top" alt="example">
+          <div class="card-body">
+            
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="Cards/f6.jpeg" class="card-img-top" alt="example">
+          <div class="card-body">
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="Cards/f7.jpeg" class="card-img-top" alt="example">
+          <div class="card-body">
+           
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="scrollspyHeading2">
+    <div class="container">
+      <div class="container-gracias">
+        <h2 class="color-font">Gracias por este año unico</br> de puo amo y felicidad </h2>
+      </div>
+      <div class="container-lista">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Gracias por darme el mejor año de todos</li>
+          <li class="list-group-item">Gracias por confiar en mí para construir nuestra vida juntos durante este primer año.</li>
+          <li class="list-group-item">Gracias por hacer de cada comida y merienda un momento único juntito a ti mori.</li>
+          <li class="list-group-item">Gracias por permitirme acompañarte en tus cosas y en esos momentos tan especiales que hemos vivido juntos.</li>
+          <li class="list-group-item">Y ojalá podamos seguir compartiendo muchos más viajes, risas y momentos llenos de tu hermosa y energía Mortia.</li>
+
+        </ul>
+      </div>
+
+    </div>
+
+  </section>
+  <script src="js/bootstrap.min.js"></script>
+  <footer class="footer">
+    <div class="container-f">
+      <p class="text-center">Espero que te haya gustado preciosa, y disculpas por ya sabes que</p>
+    </div>
+  </footer>
+  <script>
+    $('a').on('click', function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+          window.location.hash = hash;
+        });
+      }
+    });
+  </script>
+
+
+</body>
+
+
+</html>
